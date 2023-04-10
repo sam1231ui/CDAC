@@ -1,0 +1,19 @@
+1. Print the present working directory. -> pwd
+2. From working direcory show the contents of root directory. -> 
+3. Change directory to root.
+4. Change back to your home directory.
+5. Create four directories cprograms,javaprograms,C and Java. 
+   Create 4 files file1,file2,file3,file4. 
+   Create 2 files one.c and two.c in C dirctory. 
+   Create 2 files one.java and two.java in directory Java. 
+6. Move file one.c  to cprograms directory and one.java file to Javaprograms directory.
+7. Create another directory temp.
+8. Move file two.c in directory temp.
+9. Consider following table
+    5 amit 59
+    1 babita 90
+    3 chandan 89
+    4 daya 69
+    2 edwina 74
+    sort the data on column 1 , 2 and 3.
+    Store the data in different files and see the result.

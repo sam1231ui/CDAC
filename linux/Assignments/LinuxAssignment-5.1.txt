@@ -1,0 +1,124 @@
+1. Write a utility to accept any number from user and print it's table.
+-> p1.sh -> 
+	echo enter a number 
+	read m
+	i=1
+	while[ $i -ne 11]
+	  do
+		echo $i * $m
+		i=$((i+1))
+	  done
+		
+2. Write a utility to print numbers 15 to 20 using for loop.
+-> p2.sh->
+	for i in 15 16 17 18 19 20
+	   do
+	      echo $i
+	   done
+
+3. Write a utility to print numbers from 1 to 5 using until loop.
+-> p3.sh -> 
+	i=1
+	until [ $i -eq 6]
+	  do
+	    echo $i
+          done
+
+
+4. Write a utility to print first 10 odd numbers using until loop.
+-> p4.sh ->
+	i=1
+	until [ $i -eq 11 ]
+	  do
+	    echo $i
+	    i=$((i+2))
+	  done
+
+5. Accept the number from user and if the number is positive find the factorial. Give proper message.
+Write a shell utility for above problem.
+-> p5.sh -> echo enter the number 
+	    read m
+	    if [ $m -gt 0 ]
+	     then 
+             i=1 
+	     fact=1
+             while [ $i -le $m ]
+	        do
+		 fact=$((fact * i))
+		 i=$((i+1))
+		done
+	     echo $fact
+	    else
+		echo please enter positive intiger only
+	     fi
+
+
+6. Write a utility to accept 2 numbers, m and n  from user. Utility should print all even nos starting from
+    m till n. Also it should print the count of numbers.
+    e.g m=5 n=15
+    0/p : 6 8 10 12  14
+    count : 5
+-> p6.sh -> 
+	echo Enter 2 number
+	read m n
+	count=0
+	while [ $m -le $n]
+	do
+	  if [ $((m%2)) -eq 0]
+	  then 
+	      echo $m
+	      m=$((m+1))
+	      count = $((count+1))
+	  else
+	       m=$((m+1))
+          fi
+         done
+	 echo $count
+
+7. Write a utility to accept number from user and check if it is prime.
+-> p7.sh->
+	echo enter a number 
+	read m
+	i=1
+	count=0
+	while [ $i -le m ]
+	do
+	  if [ $((m%i )) -eq 0]
+	  then 
+	      count=$(count+1)
+	  fi
+	i=$((i+1))
+        done
+	if[ $count -eq 2]
+	then
+	    echo The number is prime
+	else
+            echo The number is not prime
+	done
+
+8. Write a utility to delete all empty files from your directory.
+-> p8.sh -> 
+	for i in $ls
+	do
+	  if [ find . -type f -name "$i" -empty ]
+	  then 
+	      rm $i
+	  fi
+  	done
+
+9. Write a utility to move all the files of size more than 0 bytes to another directory. Make sure that directory is already existing.
+-> p9.sh ->
+	for i in $ls
+	do
+	  if[
+
+
+
+10. Accept a number n from the user. Write a utility to print n odd numbers and print.
+-> p10.sh -> 
+	echo Enter a number 
+	read m
+	i=1
+	while [ $m
+
+11. Display contents of all the files in your current directory. Script should display the name of file and then it's contents. If it is directory, propermessage should be displayed.

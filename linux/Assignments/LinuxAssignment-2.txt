@@ -1,0 +1,38 @@
+1. Print the present working directory. -> pwd
+2. From working direcory show the contents of root directory. -> ls \/
+3. Change directory to root. -> cd \/
+4. Change back to your home directory. -> cd desktop
+5. Create four directories cprograms,javaprograms,C and Java. -> mkdir c cp java javap
+   Create 4 files file1,file2,file3,file4. 
+   Create 2 files one.c and two.c in C dirctory. -> touch one.c tow.c 
+   Create 2 files one.java and two.java in directory Java. -> touch same as above
+6. Move file one.c  to cprograms directory and one.java file to Javaprograms directory.
+7. Create another directory temp.
+8. Move file two.c in directory temp. -> mv file path
+9. Consider following table
+    5 amit 59
+    1 babita 90
+    3 chandan 89
+    4 daya 69
+    2 edwina 74
+    sort the data on column 1 , 2 and 3. -> sort -k1 filename 
+					   sort -k2 filename
+					 sort -k3 filename
+    Store the data in different files and see the result.
+10. Create directory copy_file in your home directory.
+   Copy all files starting with name file in the directory copy_file.
+11. Remove all .c files from your current directory -> 
+12. Delete directory copy_file. -> rmdir name
+13. Create hard link for any file and check the effect using ls command.
+14. Create soft link for any file and check the effect using ls command.
+15. Create files by name hello1,hello2,hellofile under home directory.
+    Find all the files whose name starts with hello in home directory.
+    e.g hello1,hello2, hellofile etc.
+16. Count number of entries in your current directory.
+17. Find the empty files
+18. Count total number of C files in current directory. -> find . -type f -name *.c | wc -l
+19. Count all the directories present in current directory. -> find . -type d | wc -l
+20. Create file with names of 10 countries.
+    1. try head command -> head -n 5 file name
+    2. try tail command -> tail -n 5 file name 
+    3. display 6th and 7th country from your file. -> head -n 7 | tail -n 2 
